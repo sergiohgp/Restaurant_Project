@@ -1,0 +1,638 @@
+*, *::before , *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Real Body of the webpage */
+main {
+  text-align: center;
+  background-image: url(../images/bg_1.jpg);
+  background-position: center center !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  display: block;
+  height: 763px;
+}
+/* about page bg image */
+.about {
+  background-image: url(../images/bg_4.jpeg);
+  height: 250px;
+}
+
+/* Overlay layer that makes it looks darker. */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  opacity: .7;
+}
+
+/* No decoration for these elements */
+li, a, button {
+  font-weight: 400;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+/********************************************************/
+/**************** This is the info bar ******************/
+.wrap_info_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.05)
+}
+.info_container {
+  display: flex;
+  margin: auto;
+}
+.nav_info {
+  padding: 5px 35px;
+  color: #AAAAAA;
+}
+/********************************************************/
+/***************** This is the Nav Bar ******************/
+.nav {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo, .logo a{
+  font-weight: bolder;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  transition: all 0.1s ease 0s;
+  color: #2B94D1; 
+}
+
+.nav__links li a:active { /* When the link is active it has a color */
+  color: #c8a97e;
+}
+
+button {
+  padding: 9px 29px;
+  background-color: #2B94D1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.6);
+}
+
+/********************************************************/
+/* All CSS related with the <main> body */
+
+.main {
+  z-index: 5;
+  top: 15rem;
+  position: relative;
+}
+/******** titles in the other pages ***********/
+.secondary {
+  top: 10rem;
+}
+/*********************************************/
+.tangerine_font {
+  font-family: 'Tangerine', cursive;
+  font-size: 7rem;
+  color: #2B94D1 !important;
+  font-weight: 900;
+  transition: all 0.3s ease 0s;
+}
+.slogan {
+  font-size: 3.3rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+  transition: all 0.3s ease 0s;
+}
+.show_plates {
+  padding-top: 10px;
+  width: 100%;
+}
+.show_plates table {
+  width:70%; 
+  margin-left:15%; 
+  margin-right:15%;
+  color: white;
+}
+.show_plates td {
+  max-width: 25%;
+  text-align: center;
+}
+th {
+  padding: 10px 5px;
+  text-transform: capitalize;
+}
+td p {
+  padding: 10px 20px;
+  text-align: justify;
+}
+.wrap_img {
+  text-align: center;
+  align-self: center;
+}
+.plates_img {
+  text-align: center;
+  object-fit: cover;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+/********************************************************/
+/* All CSS related with the real body of the page */
+.body {
+  min-height: 515px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 400;
+  transition: all 0.3s ease 0s;
+}
+
+/* CSS of the menu page */
+
+.table-nav-menu{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding: 55em 40;
+  position: relative;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  transition: all 0.1s ease 0s;
+  color: white; 
+}
+
+.nav_links li a:active { /* When the link is active it has a color */
+  color: #c8a97e;
+}
+
+.table-breakfast{
+  width: 70%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border: 1px solid #dee2e6;
+}
+  .table-breakfast td,
+  .table-breakfast th{
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6; }
+  .table-breakfast thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6; }
+  .table-breakfast tbody + tbody {
+    border-top: 2px solid #dee2e6; }
+
+.Breakfast{
+  padding: 9px 29px;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: 400;
+  align-content: left;
+  color: black;
+
+}
+
+.Breakfast:hover{
+  color: white;
+  background-color: rgba(0, 136, 169, 1);
+}
+
+.bf-title{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.above-right {
+  text-align: right;
+}
+
+.above-right .price {
+  font-size: 20px;
+  color: #2B94D1;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.order-button {
+  background: #2B94D1;
+  border: 1px solid #2B94D1;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1.5;
+
+}
+
+.Lunch{
+  padding: 9px 29px;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: 400;
+  align-content: left;
+  color: black;
+}
+
+.Lunch:hover{
+  color: white;
+  background-color: rgba(0, 136, 169, 1);
+}
+
+.Dinner{
+  padding: 9px 29px;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: 400;
+  align-content: left;
+  color: black;
+}
+
+.Dinner:hover{
+  color: white;
+  background-color: rgba(0, 136, 169, 1);
+}
+
+.Drinks{
+  padding: 9px 29px;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: 400;
+  align-content: left;
+  color: black;
+}
+
+.Drinks:hover{
+    color: white;
+  background-color: rgba(0, 136, 169, 1);
+}
+
+.Desserts{
+  padding: 9px 29px;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: 400;
+  align-content: left;
+  color: black;
+}
+
+.Desserts:hover{
+  color: white;
+  background-color: rgba(0, 136, 169, 1);
+}
+
+.Wine{
+  padding: 9px 29px;  
+  font-size: 30px;
+  font-family: arial;
+  font-weight: 400;
+  align-content: left;
+  color: black;
+}
+
+.Wine:hover{
+  color: white;
+  background-color: rgba(0, 136, 169, 1);
+}
+
+.lc{
+  width: 50%;
+  height: 250px;
+}
+
+.rc p {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* -------------------------- */
+/* Stories page */
+.stories_wrap {
+  width: 100%;
+  margin: auto;
+}
+.stories_container {
+  height: 800px;
+  display: grid;
+  grid-template-columns: 10% 20% 5% 25% 5% 20% 10%;
+  /* grid-template-columns: 100px 200px 200px 200px 100px; */
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "e1 TiagoPic e2 Ser2ndPic e3 Ser1stPic e4"
+    "e1 TiagoText e2 Ser2ndText e3 Ser1stText e4";
+}
+.stories_container img {
+  place-self: center;
+}
+.stories_font {
+  text-align: justify;
+}
+/********************************************************/
+/* Book Table Page */
+.form_table {
+  display: flex;
+  /* width: 100%; */
+  /* text-align: center; */
+  color: black;
+  margin-left: 0;
+  margin-right: 0;
+}
+.row{
+  display: block;
+  
+}
+.container {
+  display: inline-block;
+}
+.col {
+  display: inline-block;
+  margin: 7px 7px 0 0;
+  min-width: 50%;
+  color: #555;
+  text-align: center;
+}
+.mp {
+  min-width: 50%;
+  max-width: 50%;
+}
+.bt {
+  min-width: 550px;
+  margin: auto;
+}
+.col input, .col select, .col span, .col option {
+  text-align: center;
+  padding: 8px 12px;
+  text-transform: capitalize;
+  width: 200px;
+  color: #555;
+}
+.full {
+  width: 100%;
+}
+.left {
+  text-align: left;
+  align-content: left;
+}
+.h {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: left;
+}
+.title {
+  font-size: 8rem;
+  padding: 0;
+}
+.overlapping {
+  position: relative;
+  margin-top: -30px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  /* font-size: 20px; */
+}
+.img_map {
+  width: 95%;
+  min-height: 650px;
+  object-fit: cover;
+  align-content: center;
+  padding: 0;
+}
+.img_map_contact {
+  min-height: 400px;
+}
+.ab_map {
+  display: inline-flex;
+}
+.info_about, .map {
+  margin: auto;
+}
+.info_about{
+  min-width: 700px;
+}
+.btn_reservation {
+  border: 0;
+  background-color: #2B94D1;
+  color:white !important;
+  padding: 15px 30px !important;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/********************************************************/
+/* About Us */
+.sm_container {
+  display: block;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  line-height: 1.7rem;
+}
+
+/********************************************************/
+/* All CSS related with the footer */
+.d3 caption {
+  font-weight: bold;
+  padding: 20px 20px;
+  font-size: 1.3rem;
+}
+footer {
+  background-color:#141313;
+}
+.f1{
+  display:flex;
+  padding:10px;
+}
+.d3{
+  justify-content: center;
+  display:flex;
+  width:50%;
+  /* padding: 10px 10px; */
+}
+.d3:first-child {
+  padding-left: 70px;
+}
+
+.d3:last-child {
+  padding-right: 70px;
+}
+
+.d3 table{
+  color:White;
+}
+.d3 td{
+  color:Grey;
+}
+#box1, #box4{
+  text-align:justify;
+}
+#box2 td {
+  padding: 2px 10px;
+}
+#box3 img {
+  height: 100px;
+  width: 70px;
+}
+.img {
+  height: 100px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} 
+#copyright {
+  padding: 20px;
+  text-align: center;
+  color: #999999;
+}
+
+.form {
+  text-align: center;
+  padding: 10px 20px;
+  
+}
+.form input {
+  width: 110%;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  border: none !important;
+}
+.t input {
+  color:#555;
+}
+.t {
+  padding-top: 30px;
+}
+.b {
+  background-color: #2B94D1;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;  
+}
+
+.ba{
+  flex: 0 0 25%;
+  max-width:25%;
+}
+.a{
+  flex: 0 0 50%;
+  max-width:50%;
+}
+#c{
+  justify-content: center;
+}
+#bc{
+  flex: 0 0 100%;
+  max-width: 100%;
+  color:Black;
+}
+.sla{
+  flex-wrap: wrap;
+  margin-right:10%;
+  margin-left:10%;
+}
+		
+#s1{
+  position:relative;
+  padding: 7em 0;
+}
+#a2{
+  padding-right:30px;
+				
+}
+.container2{
+  width:100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.d-flex{
+  display:flex;
+}
+
+.b1{
+  background-color:rgba(0, 136, 169, 1);
+  color:White;
+  border-color:rgba(0, 136, 169, 1);
+  border-radius: 4px;
+  padding: 15px 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ta{
+  padding:10px;
+  width: 100%;
+  margin:4px;
+}
+#c caption{
+  padding:0px 20px 20px 20px;
+  font-weight:600;
+  font-size:25px;
+}
